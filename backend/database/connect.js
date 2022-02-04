@@ -10,4 +10,3 @@ const clientConfig = {
 }
 
 exports.client = new Client(clientConfig)
-exports.clientConnection = () => {client.connect(e => console.error(e))}
