@@ -4,6 +4,7 @@
   "description": "Really simple to-do application backend with PostgreSQL and Express",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "jest"
   },
   "repository": {
@@ -22,5 +23,10 @@
   "bugs": {
     "url": "https://github.com/egesabanci/worqcompany-case/issues"
   },
-  "homepage": "https://github.com/egesabanci/worqcompany-case#readme"
+  "homepage": "https://github.com/egesabanci/worqcompany-case#readme",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "pg": "^8.7.3"
+  }
 }
