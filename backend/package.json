@@ -1,0 +1,26 @@
+{
+  "name": "worqcompany-backend",
+  "version": "1.0.0",
+  "description": "Really simple to-do application backend with PostgreSQL and Express",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/egesabanci/worqcompany-case.git"
+  },
+  "keywords": [
+    "PostgreSQL",
+    "Case-study",
+    "Express",
+    "NodeJS",
+    "Todo-application"
+  ],
+  "author": "Ege Sabanci <egesabanci@outlook.com.tr>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/egesabanci/worqcompany-case/issues"
+  },
+  "homepage": "https://github.com/egesabanci/worqcompany-case#readme"
+}
