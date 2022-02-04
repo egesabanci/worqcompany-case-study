@@ -1,0 +1,7 @@
+{
+  "postgresPassword": "secret-password",
+  "databaseName": "postgres",
+  "port": 5432,
+  "user": "postgres",
+  "host": "127.0.0.1"
+}

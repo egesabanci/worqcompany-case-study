@@ -1,12 +1,12 @@
-require("dotenv").config()
+const dbConfig = require("../db.config.json")
 const {Client} = require("pg")
 
 const clientConfig = {
-  user: process.env.user,
-  host: process.env.host,
-  database: process.env.databaseName,
-  password: process.env.postgresPassword,
-  port: process.env.port
+  user: dbConfig.user,
+  host: dbConfig.host,
+  database: dbConfig.databaseName,
+  password: dbConfig.postgresPassword,
+  port: dbConfig.port
 }
 
 exports.client = new Client(clientConfig)
