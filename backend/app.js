@@ -1,14 +1,9 @@
 const queries = require("./database/queries")
 const {client} = require("./database/connect")
+let _ = queries.createTodoTable()
 
 const express = require("express")
 const app = express()
-
-
-app.get("/", (_, res) => {
-  let err = queries.createTodoTable()
-  res.json({status: err ? "error occured" : "connected"})
-})
 
 
 app.get("/todos", (_, res) => {
