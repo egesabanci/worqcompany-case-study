@@ -57,4 +57,5 @@ app.get("/delete-todo/:id", (req, res) => {
 
 
 const serverPort = 8080
-app.listen(serverPort, () => console.log(`Listening on port: ${serverPort}`))
+app.listen(serverPort, "0.0.0.0")
+console.log(`Running on port: ${serverPort}`)
