@@ -24,9 +24,10 @@ Run the Express Backend via Docker on port `0.0.0.0:8080`, this command will pul
 ```
 >>> bash run-node-container.sh
 ```
-Finally, `cd` into the `frontend` directory and run the UI on port `localhost:3000`:
+Finally, `cd` into the `frontend` directory, install dependecies and run the UI on port `localhost:3000`:
 ```
 >>> cd frontend/
+>>> npm install
 >>> npm run start
 ```
 Now the UI has been started to serve on `localhost:3000`, go to `http://localhost:3000` and you can use the app.
