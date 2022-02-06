@@ -123,7 +123,7 @@ const Todo = (props) => {
       <span className = "content">
         <h3>
           {props.title !== "null"
-            ? (props.title.length > 20
+            ? (props.title.length > 20 && !isShowAll
               ? props.title.slice(0, 20)
               : props.title
             )
