@@ -61,15 +61,3 @@ exports.updateTodoStatus = (id, newStatus) => {
     return err
   })
 }
-
-
-exports.deleteTodo = (id) => {
-  const sqlCommand = `
-    DELETE FROM todos
-    WHERE id = ${id};
-  `
-
-  client.query(sqlCommand, (err, _) => {
-    return err
-  })
-}

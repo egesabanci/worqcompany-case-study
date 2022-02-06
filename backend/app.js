@@ -1,3 +1,4 @@
+const cors = require("cors")
 const parser = require("body-parser")
 const queries = require("./database/queries")
 const {client} = require("./database/connect")
@@ -5,12 +6,14 @@ let _ = queries.createTodoTable()
 
 const express = require("express")
 const app = express()
-app.use(parser.urlencoded({extended: true}));
+app.use(cors())
+app.use(parser.urlencoded({extended: true}))
+app.use(parser.json())
 
 
 app.get("/todos", (_, res) => {
   const sqlCommand = `
-    SELECT * FROM todos;
+    SELECT * FROM todos ORDER BY id DESC;
   `
 
   client.query(sqlCommand, (err, response) => {
@@ -37,12 +40,6 @@ app.post("/update-todo", (req, res) => {
 
 app.post("/update-todo-status", (req, res) => {
   let err = queries.updateTodoStatus(req.body.id, req.body.status)
-  res.json({response: err ? {status: false} : {status: true}})
-})
-
-
-app.post("/delete-todo", (req, res) => {
-  let err = queries.deleteTodo(req.body.id)
   res.json({response: err ? {status: false} : {status: true}})
 })
 

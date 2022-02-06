@@ -28,7 +28,8 @@ const TopHeader = () => {
   return(
     <HeaderContainer>
       <h4>Todo Application</h4>
-      <Button 
+      <Button
+        onClickFunction = {() => window.location.reload()}
         color = "black"
         width = "45%"
         pad = "0.9rem 0.7rem"

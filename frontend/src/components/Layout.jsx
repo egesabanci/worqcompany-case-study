@@ -1,6 +1,6 @@
 import theme from "../theme"
 import media from "styled-media-query"
-import styled from "styled-components/macro"
+import styled from "styled-components"
 
 
 export const AppContainer = styled.div`
@@ -41,6 +41,7 @@ const StyledButton = styled.button`
   background-color: ${props => props.bg ? props.bg : theme.gray};
   border: ${props => props.border ? props.border : "none"};
   border-radius: ${props => props.rad ? props.rad : "5px"};
+  transition: 0.2s ease;
   
   & > span {
     color: ${props => props.color ? props.color : theme.blue};
@@ -58,6 +59,11 @@ const StyledButton = styled.button`
 
   &:hover {
     cursor: pointer;
+    transform: scale(1.05);
+  }
+
+  &:active {
+    transform: scale(0.95);
   }
 
   ${media.greaterThan("medium")`
@@ -82,7 +88,8 @@ export const Button = (props) => {
         fontSize = {props.fontSize}
         color = {props.color}
         width = {props.width}
-        iconSize = {props.iconSize}   
+        iconSize = {props.iconSize}
+        onClick = {props.onClickFunction}
       >
       <span className = "btn-text">{props.header}</span>
       {props.icon && <span className = "btn-icon">{props.icon}</span>}

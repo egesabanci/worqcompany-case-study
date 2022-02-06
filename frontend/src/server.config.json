@@ -1,0 +1,6 @@
+{
+  "todos": "http://0.0.0.0:8080/todos",
+  "addTodo": "http://0.0.0.0:8080/add-todo",
+  "updateTodo": "http://0.0.0.0:8080/update-todo",
+  "updateTodoStatus": "http://0.0.0.0:8080/update-todo-status"
+}
