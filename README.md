@@ -14,6 +14,7 @@ This repository contains, basic To-do application which is created with NodeJS (
 Clone the repository and `cd` into the project directory:
 ```
 >>> git clone https://www.github.com/egesabanci/worqcompany-case-study
+>>> cd worqcompany-case-study
 ```
 Run the PostgresQL via Docker on port `172.17.0.1:5432`:
 ```
