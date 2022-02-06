@@ -34,4 +34,4 @@ Now the UI has been started to serve on `localhost:3000`, go to `http://localhos
 Dockerized application backend can be found on Docker Hub ([here](https://hub.docker.com/r/egesabanci/worqcompany-case-api)).
 
 # Application UI Overview
-![Application UI Overview]()
+![Application UI Overview](https://raw.githubusercontent.com/egesabanci/worqcompany-case-study/master/assets/application-ui-overview.png?token=GHSAT0AAAAAABMKUTO2Y7KS2WO7JRLTY564YQIMUFA)
