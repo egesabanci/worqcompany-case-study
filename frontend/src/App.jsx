@@ -94,19 +94,29 @@ const App = () => {
               color = {theme.light} />
             <p>{incompleted} to-do remaining</p>
           </AddTodoSpan>
-          <TodoContainer>
-            {todos && todos.map((item) => 
-              <Todo
-                key = {item.id}
-                id = {item.id}
-                title = {item.title}
-                addDate = {item.add_date}
-                updateDate = {item.update_date}
-                description = {item.description}
-                status = {item.status}
-              />
-            )}
-          </TodoContainer>
+          {todos.length > 0
+            ?
+            <TodoContainer>
+              {todos && todos.map((item) => 
+                <Todo
+                  key = {item.id}
+                  id = {item.id}
+                  title = {item.title}
+                  addDate = {item.add_date}
+                  updateDate = {item.update_date}
+                  description = {item.description}
+                  status = {item.status}
+                />
+              )}
+            </TodoContainer>
+            :
+            <Row height = "75vh">
+              <h3 
+                style = {{background: theme.light, color: theme.dark,padding: "10px 15px", borderRadius: "5px"}}>
+                There is no to-do in the list
+              </h3>
+            </Row>
+          }
         </Row>
       </Container>
     </AppContainer>
