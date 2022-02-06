@@ -8,7 +8,7 @@
   <img src = "https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white">
 </div>
 
-This repository contains, basic To-do application which is created with NodeJS (Express) and PostgresQL for backend and ReactJS (with ViteJS compiler) for frontend sections. Also, backend has been dockerized and published on Docker Hub.
+This repository contains, basic To-do application which is created with NodeJS (Express) and PostgreSQL for backend and ReactJS (with ViteJS compiler) for frontend sections. Also, backend has been dockerized and published on Docker Hub.
 
 # Quick Local Setup (Unix-based OS)
 Clone the repository and `cd` into the project directory:
@@ -16,7 +16,7 @@ Clone the repository and `cd` into the project directory:
 >>> git clone https://www.github.com/egesabanci/worqcompany-case-study
 >>> cd worqcompany-case-study
 ```
-Run the PostgresQL via Docker on port `172.17.0.1:5432`:
+Run the PostgreSQL via Docker on port `172.17.0.1:5432`:
 ```
 >>> bash run-psql-container.sh
 ```
